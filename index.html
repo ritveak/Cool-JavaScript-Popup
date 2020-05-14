@@ -1,52 +1,22 @@
 <html>
     <title>Popup</title>
-    <style>
-        body { 
-           
-            }
-        h1{
-            margin:auto;
-            color:white;
-            text-align: center;
-            padding:5px;
-            width:fit-content;
-            font-family:Verdana, sans-serif;
-            background:linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)) ;
-        }
-        .bg {
-
-            background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('bg.png');
-
-            height: 100%; 
-            padding-top: 200px;
-            margin:auto;
-            
-            text-align: center;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
-        button{
-            background: rgba(76, 175, 80,.8) ;
-
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-top:60px;
-            cursor: pointer;
-
-
-            }
-        </style>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="pop.css">
+        </head>
     <body >
         <div class="bg">
-        <h1>Here is a cool popup :</h1>
-        <button>Unleash me !</button>
-    </div>
+            <h1>Here is a cool popup :</h1>
+            <button id="show">Unleash me !</button>
+        </div>
+
+        <div class="popup-holder" >
+            <div class="popup">
+                <p>Here is a cool popup that I can use in my future projects.</p>
+                <span class="close" draggable="true">&times;</span>
+            </div>
+        </div>
+        <script src="pop.js" ></script>
     </body>
 
 </html>
